@@ -1,0 +1,114 @@
+/* ===== Global ===== */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: #f8f9fb;
+  color: #222;
+}
+
+h5, h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ===== Section Cards ===== */
+.section-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  margin-top: 20px;
+}
+
+/* ===== Today Checklist ===== */
+.today-label {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.today-label.disabled {
+  color: #888;
+  text-decoration: line-through;
+}
+
+/* ===== Heatmap Colors ===== */
+.react-calendar-heatmap .color-empty {
+  fill: #f0f0f0;
+  stroke: #d0d0d0;
+}
+
+.react-calendar-heatmap .color-github-0 {
+  fill: #ebedf0;
+}
+
+.react-calendar-heatmap .color-github-1 {
+  fill: #9be9a8;
+}
+
+.react-calendar-heatmap .color-github-2 {
+  fill: #40c463;
+}
+
+.react-calendar-heatmap rect {
+  rx: 4px;
+  ry: 4px;
+  transition: all 0.2s ease;
+}
+
+.react-calendar-heatmap rect:hover {
+  stroke: #333;
+  stroke-width: 1px;
+}
+
+/* ===== Legend ===== */
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.legend-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+/* Compact horizontal legend */
+.legend-bar {
+  display: flex;
+  gap: 4px;
+}
+
+.legend-bar .legend-box {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+/* ===== Dialog ===== */
+.MuiDialogContent-root {
+  padding-top: 12px !important;
+}
+
+.color-future {
+  fill: #d3d3d3; /* light gray */
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.selected-day {
+  background-color: #d4edda !important; /* light green */
+  border: 2px solid #28a745 !important; /* green border */
+  border-radius: 6px;
+}
+
+.future-day {
+  background-color: #f0f0f0 !important; /* light gray */
+  opacity: 0.6;
+  cursor: not-allowed !important;
+}
