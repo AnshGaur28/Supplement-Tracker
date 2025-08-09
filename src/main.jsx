@@ -6,8 +6,12 @@ import App from './App.jsx'
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("/service-worker.js").then(
-      () => console.log("Service Worker registered"),
-      (err) => console.error("SW registration failed:", err)
+      (registration) => {
+        console.log("Service Worker registered with scope:", registration.scope);
+      },
+      (err) => {
+        console.log("Service Worker registration failed:", err);
+      }
     );
   });
 }
