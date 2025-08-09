@@ -150,7 +150,7 @@ export default function App() {
                   onChange={() =>
                     plannedForToday &&
                     toggleSupplementForDate(
-                      format(new Date(), "yyyy-MM-dd"),
+                      selectedDate,
                       supp
                     )
                   }
@@ -169,7 +169,7 @@ export default function App() {
 
       {/* Heatmap */}
       <ClickAwayListener onClickAway={() => setSelectedDate(null)}>
-      <>
+      <Box>
       <Box mt={4}>
         <Typography variant="h6" gutterBottom>
           {format(currentMonth, "MMMM yyyy")}
@@ -342,7 +342,7 @@ export default function App() {
           </Box>
         </DialogContent>
       </Dialog>
-      </>
+      </Box>
       </ClickAwayListener>
 
       {/* Styles */}
